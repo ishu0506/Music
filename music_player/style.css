@@ -1,0 +1,108 @@
+/* (This is the updated CSS from previous response) */
+body {
+  font-family: 'Rubik', sans-serif;
+  background: url("image/background.jpg");
+  background-size: cover;
+  color: rgb(175, 234, 183);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.player {
+  width: 320px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+h2, h3 {
+  margin: 5px 0;
+}
+.controls button {
+  font-size: 24px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.controls button:hover {
+  background: #ff4757;
+  box-shadow: 0 0 10px #ff4757;
+}
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: #555;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: #00d2d3;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.2s ease-in;
+}
+#volume {
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  accent-color: #00d2d3;
+}
+.playlist {
+  margin-top: 20px;
+  text-align: left;
+  max-height: 120px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+.playlist div {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+.playlist div:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.playlist .active {
+  background: #ff4757;
+  color: white;
+  font-weight: bold;
+}
+.download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 18px;
+  background-color: #00d2d3;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.download-btn:hover {
+  background-color: #00b894;
+  box-shadow: 0 0 8px #00d2d3;
+}
